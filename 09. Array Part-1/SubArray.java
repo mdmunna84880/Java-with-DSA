@@ -14,7 +14,7 @@ public class SubArray {
                         min = array[k];
                     }
                 }
-                System.out.print("   => sum = "+ sum +" min = "+ min + " max = "+max);
+                System.out.print("   => sum = "+ sum +", min = "+ min + ", max = "+max);
                 ts++;
 ;               System.out.println();
             }

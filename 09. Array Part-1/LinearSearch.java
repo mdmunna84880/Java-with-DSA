@@ -9,12 +9,12 @@ public class LinearSearch {
     }
     public static void main(String[] args) {
         int numbers[] = {2, 4, 6, 8, 10, 12, 14, 16, 18};
-        int key = 20;
-        int indx = search(numbers, key);
-        if(indx == -1){
+        int key = 10;
+        int index = search(numbers, key);
+        if(index == -1){
             System.out.println("Not found");
         }else{
-            System.out.println("The index is found at "+indx);
+            System.out.println("The index is found at "+index);
         }
     }
 }
