@@ -1,4 +1,4 @@
-public class QS3 {
+public class QS5 {
     public static void main(String[] args) {
         int x = 10, y = 5;
         int exp1 = (y * (x / y + x / y));//20

@@ -6,5 +6,6 @@ public class QS3 {
         y -= z;
         z /= (x + y);
         System.out.println(x + " " + y + " " + z);//4, 0, 0
+        System.out.println(2%4);
     }
 }
