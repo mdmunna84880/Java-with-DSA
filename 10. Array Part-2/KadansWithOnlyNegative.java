@@ -23,7 +23,7 @@ public class KadansWithOnlyNegative {
         return ms;
     }
     public static void main(String[] args) {
-        int numbers[] = {-2, -3, 4, -1, -2, 1, 5,-3};
+        int numbers[] = {-2, -5};
         int ms = kadanesNegative(numbers);
         System.out.println("The maximum sum of sub-arrays are "+ms);
     }

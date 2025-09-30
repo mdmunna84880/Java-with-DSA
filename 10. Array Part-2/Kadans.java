@@ -1,18 +1,29 @@
 public class Kadans {
-    public static void Kadanes(int []numbers){
-        int cs = 0;
-        int ms = Integer.MIN_VALUE;
-        for(int i = 0; i < numbers.length; i++){
-            cs += numbers[i];
-            if(cs < 0){
-                cs = 0;
+    public static void sortColors(int[] nums) {
+        int[] arr = new int[3];
+
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] == 0 || nums[i] == 1 || nums[i] == 2){
+                arr[nums[i]]++;
             }
-            ms = Math.max(ms, cs);
         }
-        System.out.println("The max sum of sub-arrays are "+ms);
+        
+        int idx = 0;        
+        for(int i = 0; i < nums.length; i++){
+            if(arr[idx] > 0){
+                nums[i] = idx;
+                arr[idx]--;
+            }
+            if(arr[idx] == 0){
+                idx++;
+            } 
+        }
     }
     public static void main(String[] args) {
-        int[] numbers = {-2, -3, 4, -1, -2, 1, 5,-3};
-        Kadanes(numbers);
+        int nums[] = {2,0};
+        sortColors(nums);
+        for(int i = 0; i < nums.length; i++){
+            System.out.print(nums[i]+"  ");
+        }
     }
 }
