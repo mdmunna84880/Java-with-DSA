@@ -9,6 +9,8 @@ public class ArrayInputOutputUpdate{
         marks[0] = sc.nextInt();
         marks[1] = sc.nextInt();
         marks[2] = sc.nextInt();
+        
+        sc.close();
 
         System.out.println("Physics = " +marks[0]);
         System.out.println("Chemistry = " +marks[1]);

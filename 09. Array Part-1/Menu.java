@@ -8,9 +8,12 @@ public class Menu {
         return -1;
     }
     public static void main(String[] args) {
+
         String menu[] = {"Chole-Bhatule", "Rasgoola", "Puri-Sabji"};
         String item = "Chole-Bhatule";
+
         int index = menuSearch(item, menu);
+        
         if(index == -1){
             System.out.println("Not found");
         }else{
