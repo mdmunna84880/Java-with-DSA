@@ -4,21 +4,24 @@ public class FibbonacciSeries {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int nth = sc.nextInt();
-        int a = 1, b = 1;
-        // if(nth == 1){
-        //     System.out.println("Fibbonacci series from 1st to "+nth+"st");
-        // }else if(nth == 2){
-        //     System.out.println("Fibbonacci series from 1st to "+nth+"nd");
-        // }else if(nth == 3){
-        //     System.out.println("Fibbonacci series from 1st to "+nth+"rd");
-        // }else{
-        //     System.out.println("Fibbonacci series from 1st to "+nth+"th");
-        // }
-        for(int i = 1; i <= nth; i++){
-            System.out.print(a+", "+b);
-            // int temp = a;
-            // a = b;
-            // b = temp + a;
+        sc.close();
+        int a = 0, b = 1;
+        if(nth == 0){
+            System.out.println("Fibonacci series from 0th to "+nth+"th term:"+a);
+        }else{
+            System.out.println("Fibonacci series from 0th to "+nth+"th term: ");
+        }
+
+       if(nth == 1){
+        System.out.println(a+" ");
+       }else if(nth >= 2){
+            System.out.print(a+" "+b+" ");
+        }
+        for(int i = 3; i <= nth; i++){
+            int c = a+b;
+            System.out.print(c+" ");
+            a = b;
+            b = c;
         }
 
     }
